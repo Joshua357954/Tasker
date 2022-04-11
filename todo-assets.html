@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		Todo Assets ..
+	</title>
+
+<style>
+
+body{
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	height: 200vh;
+	width: 100vh;
+	align-items: center;
+	/*padding:3rem;*/
+}
+
+.banner{
+	background-color: rebeccapurple;
+	color:#FFFAFA;
+	font-family: Arial black;
+	font-weight: 700;
+	font-size: clamp(1.5em,3.5vmin,2.2em);
+	padding: .8rem 1.4rem;
+	border-radius: .4rem;
+	letter-spacing: .15rem;
+
+}
+
+.todo-item{
+	margin-top: 2em;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	max-width: 15rem;
+	/*padding:.4rem .5rem;*/
+	background-color: lightgray;
+}
+
+.todo-text{
+
+	font-family: system-ui;
+	font-weight: 500;
+	margin:0 3rem;
+}
+
+input:focus,.delete:focus{
+	outline: none;
+}
+
+.delete{
+	user-select: none;
+	font-weight: bolder;
+	font-size: 1rem;
+	padding: .4rem .7rem;
+	border: none;
+	height: 100%;
+	border-color: : white;
+	/*border-radius: .3rem;*/
+}
+
+</style>
+ 
+</head>
+<body>
+
+<div class="banner">
+	Tuesday ,June 7
+</div>
+
+<div class="todo-item">
+	<input type="checkbox" name="" onchange="changeIt()">
+	<p class="todo-text">Cook the spaghetti very well ..</p>
+	<button class="delete">Del</button>
+
+</div>
+
+<div class="todo-item">
+	<input type="checkbox" name="">
+  <p class="todo-text">Pls always be ready to do the things of GOD ..</p>
+	<button class="delete">Del</button>
+</div>
+
+<div class="todo-item">
+	<input type="checkbox" name="">
+  <p class="todo-text">Pls always be ready to be in fellowship because it is GOD  ..</p>
+	<button class="delete">Del</button>
+</div>
+
+<div class="todo-item">
+	<input type="checkbox" name="">
+  <p class="todo-text">Pls always be ready to be in fellowship because it is GOD  that own all thing in heaven and on earth ,the lord is my shepard ...</p>
+	<button class="delete">Del</button>
+</div>
+<script >
+
+let days=['monday','tuesday','wednesday','thursday','friday','saturday',
+'sunday']
+
+let banner = document.querySelector(".banner")
+
+banner.innerHTML=`${new Date().today()}`
+
+function changeIt(){
+	console.log("Hello my people")
+	alert("Hello africa")
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,157 @@
+*{
+	padding:0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+:root{
+	--red:#FFCBCB;
+	--green1:#BAFFB4;
+	--green2:#E7FBBE;
+	--yellow:#FFFDDE;
+	--purple:#D9D7F1;
+	--black:#0e1111;
+	--white:#FFFAFA;
+}
+
+body{
+	height: 100vh;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	background-color: var(--purple);
+	align-items: center;
+	flex-direction: column;
+}
+
+.nav-bar{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width:100%;
+	padding: 1.2rem;
+	flex-direction: row;
+	height:4rem;
+}
+
+.banner{
+	background-color: var(--yellow);
+	color:var(--black);
+	font-family: Arial black;
+	font-weight: 400;
+	font-size: clamp(1.0em,3.5vmin,2.2em);
+	padding: .8rem 1.4rem;
+	border-radius: .4rem;
+	letter-spacing: .15rem;
+	margin-top: .2rem;
+	transition: display 200ms ease-in-out;
+	border: 1.5px solid rgba(0,0,0,.2);
+}
+
+h1{
+	color: var(--black);
+	font-family: system-ui;
+}
+
+
+.sign-up{
+	border:none;
+	border-radius: .4rem;
+	padding:.7rem 1.1rem;
+	color:var(--black);
+	font-size:1rem;
+	font-weight: bold;
+	font-family: system-ui;
+	background-color: var(--white)
+}
+
+
+.input-box{
+	/*background-color: var(--black);*/
+	padding:.5rem .3rem;
+	margin-top: 2.5rem;
+	
+}
+
+.input-box input,input:focus{
+	outline: none;
+	border:none;
+	font-family: system-ui;
+	font-size: 1.5rem;
+	background:none;
+	text-transform: capitalize;
+	border-bottom: 5px solid var(--white)
+}
+
+.input-box span{
+	width:60px;
+	height: 60px;
+	padding:.5rem .8rem;
+	margin-left:.3rem;
+	font-size: 30px;
+	border-radius: 100%;
+	user-select: none;
+	background-color: var(--black);
+	font-weight:bold;
+	color: var(--white)
+}
+
+.middle-panel{
+	display:flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.todo-container{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	padding: 1.2rem;
+/*	background-color: red;*/
+/*	height:50px;*/
+}
+
+.todo-card{
+	display: flex;
+	justify-content: space-between;
+	width:300px;
+	background-color:var(--yellow);
+	font-family: system-ui;
+	font-weight: 500;
+	border-bottom: .3px solid rgba(0,0,0,0.2)
+}
+
+.t-text{
+	margin: .3rem 0;
+	text-align: left;
+	/*text-decoration: line-through;*/
+}
+
+.strike{
+	text-decoration: line-through;
+}
+
+input[type='checkbox']{
+	margin:.5rem;
+}
+
+.delete{
+	text-decoration: none !important;
+	padding: .4rem .7rem;
+	font-family: Arial;
+	background-color: var(--red);
+	font-weight: 900;
+	color:gray;
+	border: none;
+
+}
+
+@media (max-width: 720px){
+	.nav-bar .banner{
+		display: none;
+	}
+}
+
+
