@@ -69,6 +69,8 @@ h1{
 
 .input-box{
 	display: flex;
+	justify-content: space-around;
+	align-items: center;
 	flex-wrap: nowrap;
 	/*background-color: var(--black);*/
 	padding:.5rem .3rem;
@@ -107,6 +109,11 @@ h1{
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
+}
+
+::placeholder{
+	font-style: italic;
+	opacity: .9;
 }
 
 .todo-container{
@@ -158,6 +165,24 @@ input[type='checkbox']{
 	.nav-bar .banner{
 		display: none;
 	}
+
+	.input-box input{
+		font-size: 1.1rem;
+		border-bottom: 4px solid var(--white)
+	}
+
+	.input-box div{
+		width:50px;
+		height: 50px;
+		font-size: 25px;
+		font-weight: bolder;
+	}
+
+	::placeholder{
+		font-style: italic;
+		font-size: 20px;
+	}
 }
+
 
 
